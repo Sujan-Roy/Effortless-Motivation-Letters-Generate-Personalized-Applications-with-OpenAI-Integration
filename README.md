@@ -12,3 +12,6 @@ This repository contains an AI-powered tool that can help you write a motivation
 3. Run the generator script.
 4. Provide your resume and other information.
 5. The generator will generate a personalized motivation letter for you.
+
+# Contributing
+Please feel free to contribute to this project by submitting pull requests.
