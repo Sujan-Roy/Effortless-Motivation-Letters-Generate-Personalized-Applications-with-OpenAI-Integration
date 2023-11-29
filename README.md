@@ -6,3 +6,9 @@ This repository contains an AI-powered tool that can help you write a motivation
 * Improve your chances of getting the job or scholarship you want
 * No need to write from scratch
 * Easy to use
+# Usage
+1. Clone the repository to your local machine.
+2. Install the required dependencies.
+3. Run the generator script.
+4. Provide your resume and other information.
+5. The generator will generate a personalized motivation letter for you.
