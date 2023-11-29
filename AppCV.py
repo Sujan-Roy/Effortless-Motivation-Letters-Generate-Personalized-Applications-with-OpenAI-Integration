@@ -10,8 +10,6 @@ from transformers import pipeline
 load_dotenv()
 
 openai.api_key= os.getenv("OPENAI_API_KEY")
-#print(API_Key)
-generator = pipeline('text-generation', model='EleutherAI/gpt-neo-2.7B')
 
 
 st.markdown("""
@@ -64,21 +62,6 @@ if submitted:
       temperature=ai_temp,
       #my_key = API_Key,
       messages = [
-        {"role": "user", "content" : f"You will need to generate a cover letter based on specific resume and a job description"},
-        {"role": "user", "content" : f"My resume text: {res_text}"},
-        {"role": "user", "content" : f"The job description is: {job_desc}"},
-        {"role": "user", "content" : f"The candidate's name to include on the cover letter: {user_name}"},
-        {"role": "user", "content" : f"The job title/role : {role}"},
-        {"role": "user", "content" : f"The hiring manager is: {manager}"},
-        {"role": "user", "content" : f"Experience in this role: {experience}"},
-        {"role": "user", "content" : f"Motivation for the role: {motivation}"},
-        {"role": "user", "content" : f"How you heard about the opportunity: {referral}"},
-        {"role": "user", "content" : f"The company to which you are generating the cover letter for: {company}"},
-        {"role": "user", "content" : f"The cover letter should have three content paragraphs"},
-        {"role": "user", "content" : f""" 
-        In the first paragraph focus on the following: you will convey who you are, what position you are interested in, and where you heard
-        about it, and summarize what you have to offer based on the above resume
-        """},
             {"role": "user", "content" : f""" 
         In the second paragraph focus on why the candidate is a great fit drawing parallels between the experience included in the resume 
         and the qualifications on the job description.
@@ -95,9 +78,9 @@ if submitted:
         {"role": "user", "content" : f"Generate a specific cover letter based on the above. Generate the response and include appropriate spacing between the paragraph text"}
       ]
     )
-
+            Contact at sujan.007.ice@gmail.com
     response_out = completion['choices'][0]['message']['content']
     st.write(response_out)
-
+Contact at sujan.007.ice@gmail.com
     # include an option to download a txt file
     st.download_button('Download the cover_letter', response_out)
