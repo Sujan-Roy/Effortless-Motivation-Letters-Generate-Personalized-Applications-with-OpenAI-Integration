@@ -16,7 +16,8 @@ This repository contains an AI-powered tool that can help you write a motivation
 # Input
 The following screenshot shows the required file description for creating a motivation letter using the AI-Powered Motivation Letter Generator:
 
-![Screenshot from 2023-11-30 00-13-17](https://github.com/Sujan-Roy/Effortless-Motivation-Letters-Generate-Personalized-Applications-with-OpenAI-Integration/assets/21309722/0b6e7368-479e-4fe6-be09-976df27da70f)
+![Screenshot from 2023-12-04 21-42-26](https://github.com/Sujan-Roy/Effortless-Motivation-Letters-Generate-Personalized-Applications-with-OpenAI-Integration/assets/21309722/5298bf05-330a-443b-a32a-36a815aa2d44)
+
 
 # Output
 The following screenshot shows the output which is using the AI-Powered for Motivation Letter Generator:
