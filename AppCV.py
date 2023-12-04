@@ -7,11 +7,6 @@ from langchain.llms import OpenAI
 from transformers import pipeline
 
 
-load_dotenv()
-
-openai.api_key= os.getenv("OPENAI_API_KEY")
-
-
 st.markdown("""
 # ✍️ AI-Powered Motivation Letter Generator
             
@@ -22,6 +17,16 @@ Generate a cover letter. All you need to do is:
             
 """)    
 
+
+st.title("Please paste your own API key below")
+API_Key = st.text_input("API Key")
+if API_Key:
+    openai.api_key= API_Key
+    st.success("API Key set successfully")
+    st.write(f"API key is: {API_Key}")
+else:
+    st.warning("Please read the instrucation for how to get the API key. https://www.maisieai.com/help/how-to-get-an-openai-api-key-for-chatgpt")
+            
 #input resume and job description
 res_file = st.file_uploader('🗂️ Upload your resume in pdf format')
 if res_file:
